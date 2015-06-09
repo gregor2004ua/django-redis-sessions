@@ -38,7 +38,7 @@ def test_items():
     redis_session['item1'], redis_session['item2'] = 1, 2
     redis_session.save()
     # Python 3.*
-    eq_(list(redis_session.items()), [('item2', 2), ('item1', 1)])
+    eq_(cmp(list(redis_session.items()), [('item2', 2), ('item1', 1)]), 0)
 
 
 def test_expiry():
