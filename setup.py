@@ -7,6 +7,7 @@ def read(filename):
 
 packages = ['redis_sessions']
 
+#to trigger travis ci
 
 setup(
     name='django-redis-sessions',
